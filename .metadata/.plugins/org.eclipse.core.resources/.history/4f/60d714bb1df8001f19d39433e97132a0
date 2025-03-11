@@ -1,0 +1,19 @@
+package First;
+
+import jakarta.servlet.http.HttpServlet;
+
+public class srvlt extends HttpServlet {
+	
+	private Loginandregdao loginandregdao;
+	
+	public void init() {
+		loginandregdao = new Loginandregdao();
+	}
+	
+	protected void service(HttpServlet request, HttpServlet response) {
+		
+		String activity = request.getParameter("avtivity");
+		
+	}
+
+}

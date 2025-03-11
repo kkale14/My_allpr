@@ -1,0 +1,15 @@
+package First;
+
+public class Loginandregdao {
+	
+	
+	public static void main(String[] args) {
+		
+		 String url = "jdbc:oracle:thin:@localhost:1521:xe";  // Change with your Oracle DB details
+	     String username = "system";   // Your Oracle username
+	     String password = "admin";   // Your Oracle password
+	     
+	     
+
+}
+}

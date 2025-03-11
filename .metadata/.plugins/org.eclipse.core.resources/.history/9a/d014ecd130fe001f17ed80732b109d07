@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+</head>
+<body>
+
+<style>
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Login container */
+div {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Heading style */
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Input field styling */
+input[type="text"], input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+}
+
+/* Button styling */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Link styling */
+a {
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Additional padding for labels */
+label {
+    text-align: left;
+    font-size: 16px;
+    color: #333;
+}
+
+
+</style>
+<div >
+        <h2>Login</h2>
+        
+        <form action="Srvlt" method="service">
+        <input type="hidden"  name="activity" value="login">
+            <!-- User Type Selection (Student or Admin) 
+            <div >
+                <label >Login as:</label>
+                <select  name="role" class="input-field">
+                    <option value="STUDENT">Student</option>
+                    <option value="ADMIN">Admin</option>
+                </select>
+            </div>
+-->
+            <!-- Username and Password -->
+            <label>Username:</label>&nbsp;<input type="text"  name="username"  placeholder="username" required>&nbsp;&nbsp;&nbsp;
+            <label>Password:</label>&nbsp;<input type="password"  name="password"  placeholder="password" required>&nbsp;&nbsp;
+            
+            <!-- Login Button -->
+            <button type="submit" >Login</button>
+            <select name="role">
+ 		<option value="STUDENT">Student</option>
+         <option value="ADMIN">Admin</option>
+      </select>
+           <a href="Home.html">Home</a>
+        </form>
+    </div>
+
+</body>
+</html>

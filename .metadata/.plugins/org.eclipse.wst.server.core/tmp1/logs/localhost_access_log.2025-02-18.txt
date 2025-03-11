@@ -1,0 +1,12 @@
+127.0.0.1 - - [18/Feb/2025:09:15:28 +0530] "GET / HTTP/1.1" 404 755
+0:0:0:0:0:0:0:1 - - [18/Feb/2025:09:15:31 +0530] "GET /Myserpr/WEB-INF/classes/sample/Samplex.java HTTP/1.1" 404 686
+0:0:0:0:0:0:0:1 - - [18/Feb/2025:09:15:31 +0530] "GET /favicon.ico HTTP/1.1" 404 766
+127.0.0.1 - - [18/Feb/2025:10:17:02 +0530] "GET / HTTP/1.1" 404 755
+0:0:0:0:0:0:0:1 - - [18/Feb/2025:10:17:04 +0530] "GET /Myserpr/ HTTP/1.1" 200 230
+0:0:0:0:0:0:0:1 - - [18/Feb/2025:10:17:04 +0530] "GET /favicon.ico HTTP/1.1" 404 766
+0:0:0:0:0:0:0:1 - - [18/Feb/2025:10:17:07 +0530] "GET /Myserpr/Myservprogram HTTP/1.1" 404 780
+127.0.0.1 - - [18/Feb/2025:14:49:00 +0530] "GET / HTTP/1.1" 404 755
+0:0:0:0:0:0:0:1 - - [18/Feb/2025:14:49:01 +0530] "GET /Myfirstpro/WEB-INF/classes/mypkg/Scls.java HTTP/1.1" 404 686
+0:0:0:0:0:0:0:1 - - [18/Feb/2025:14:49:01 +0530] "GET /favicon.ico HTTP/1.1" 404 766
+0:0:0:0:0:0:0:1 - - [18/Feb/2025:14:50:18 +0530] "GET /Myfirstpro/WEB-INF/classes/mypkg/Scls.java HTTP/1.1" 404 686
+0:0:0:0:0:0:0:1 - - [18/Feb/2025:14:50:18 +0530] "GET /favicon.ico HTTP/1.1" 404 766

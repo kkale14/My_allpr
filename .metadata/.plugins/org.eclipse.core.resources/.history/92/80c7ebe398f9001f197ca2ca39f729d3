@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Home </title>
+</head>
+<body>
+
+<h1>Please select your Role</h1>
+
+<a type="button" href="Logintab.html" >Admin</a>
+<a type="button" href="Reg.html" >Student</a>
+
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+package htpsrv;
+
+import javax.servlet.http.HttpServlet;
+
+public class Service  extends HttpServlet {
+	
+	
+	public  void getEmployee()
+	{
+		Connection conn=new.getEmployee();
+		
+		
+		
+	}
+	
+
+}

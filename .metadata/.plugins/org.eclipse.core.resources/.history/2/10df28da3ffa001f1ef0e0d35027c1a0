@@ -1,0 +1,17 @@
+package htpsrv;
+
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class EmpServlet extends HttpServlet {
+	
+	public void service(HttpServletRequest req, HttpServletResponse res) {
+		
+		
+		EmpServlet es= new EmpServlet();
+		
+		es.service();
+	}
+
+}

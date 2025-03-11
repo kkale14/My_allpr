@@ -1,0 +1,14 @@
+package First;
+
+public class Adminandstdmodel {
+	
+	private int id;
+	private String name;
+	private String username;
+	private String password;
+	private String email;
+	
+	
+	
+
+}

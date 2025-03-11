@@ -1,0 +1,23 @@
+package htpsrv;
+
+import java.sql.Connection;
+import java.util.List;
+
+import javax.servlet.http.HttpServlet;
+
+public class Service  extends HttpServlet {
+	
+	
+	private Connection1 connection1;
+
+	public Service()
+	{
+		connection1=new Connection1();
+	}
+	
+	
+	
+	
+	
+
+}

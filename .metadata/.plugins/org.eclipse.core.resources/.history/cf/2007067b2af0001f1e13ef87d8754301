@@ -1,0 +1,28 @@
+package htpsrv;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class Cookiepost extends HttpServlet 
+{
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        // Getting form parameters
+        String username = request.getParameter("username");
+        //String email = request.getParameter("email");
+
+        // Set the content type to display the result in HTML format
+        response.setContentType("text/html");
+
+        // Write the response
+        response.getWriter().println("<html><body>");
+        response.getWriter().println("<h2>Form Submitted Successfully</h2>");
+        response.getWriter().println("<p>Username: " + username + "</p>");
+       // response.getWriter().println("<p>Email: " + email + "</p>");
+        response.getWriter().println("</body></html>");
+    }
+	
+}

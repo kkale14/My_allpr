@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>dgtdpst</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+  
+ <servlet>
+  
+  <servlet-name>Htpservdgtdpst</servlet-name>
+  <servlet-class>htpsrv.Htpservdgtdpst</servlet-class>
+  
+  
+   </servlet>
+    
+  <servlet-mapping>
+  
+  <servlet-name>Htpservdgtdpst</servlet-name>
+  <url-pattern>/Htpservdgtdpst</url-pattern>
+  
+  </servlet-mapping>
+  
+  
+  <servlet>
+        <servlet-name>Cookie1</servlet-name>
+        <servlet-class>htpsrv.Cookie1</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Cookie1</servlet-name>
+        <url-pattern>/Cookie1</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    <servlet>
+        <servlet-name>Cookiepost</servlet-name>
+        <servlet-class>htpsrv.Cookiepost</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Cookiepost</servlet-name>
+        <url-pattern>/Cookiepost</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Session1t</servlet-name>
+        <servlet-class>htpsrv.Session1</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Session1</servlet-name>
+        <url-pattern>/Session1</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+</web-app>

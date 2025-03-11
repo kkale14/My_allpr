@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Welcome</title>
+</head>
+<body>
+
+<style>
+        /* General body styles */
+        body {
+        background-image:url("sunset.jpg");
+            font-family: Arial, sans-serif;
+       
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Centering the content */
+        h2 {
+            text-align: center;
+            color: #8B0000 ; /* Green color for the text */
+            font-size: 36px;
+            margin-top: 50px; /* Space from the top of the page */
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Adding a background color and padding to the body */
+        body {
+       
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+    </style>
+
+
+<h2> Welcome To Rs Softech Institute</h2>
+</body>
+</html>

@@ -1,0 +1,29 @@
+package First;
+
+import javax.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+public class srvlt extends HttpServlet {
+	
+	private Loginandregdao loginandregdao;
+	
+	public void init() {
+		loginandregdao = new Loginandregdao();
+	}
+	
+	protected void service(HttpServletRequest request, HttpServletResponse response) {
+		
+		String activity = request.getParameter("activity");
+		
+		if("register".equals(activity)) {
+			userRegister(request,response);
+		}else if("login".equals(activity)) {
+			userValidate(request,response);
+		} else {
+			response.sendRedirect("error.html");
+		}
+		
+	}
+
+}

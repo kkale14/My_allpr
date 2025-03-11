@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+
+</head>
+<body>
+
+ <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+             margin-left: 250px;
+            padding: 0px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        .container{
+          width: 20;
+          height:30px;
+          text-align:center;
+            margin: 10px;  
+            margin-left:50px;       
+            padding-left: 50px;
+            padding-right:50px;
+            background-color: white;
+            border-radius: 8px;
+  
+        }
+        
+        </style>
+<h1> Welcome to RS Softtech Institute </h1>
+<label for="student"></label>
+ <a  type="submit" value="Submit"> Login</a>
+ <button class= "container" type="submit" value="Submit">Register</button>
+
+
+
+</body>
+</html>

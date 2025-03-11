@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+</head>
+<body>
+
+<div >
+        <h2>Login</h2>
+        
+        <form action="Loginandregdao" method="service">
+            <!-- User Type Selection (Student or Admin) -->
+            <div >
+                <label >Login as:</label>
+                <select  name="userType" class="input-field">
+                    <option value="STUDENT">Student</option>
+                    <option value="ADMIN">Admin</option>
+                </select>
+            </div>
+
+            <!-- Username and Password -->
+            <input type="text"  name="username"  placeholder="username" required>
+            <input type="password"  name="password"  placeholder="password" required>
+            
+            <!-- Login Button -->
+            <button type="submit" >Login</button>
+           
+        </form>
+    </div>
+
+</body>
+</html>
