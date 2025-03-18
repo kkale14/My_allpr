@@ -86,32 +86,32 @@ public class Loginandregdao {
 		return role;
 	}
 	
-//	public List<Adminandstdmodel> getAllStudents() throws ClassNotFoundException, SQLException {
-//    	
-//    	
-//    	
-//        List<Adminandstdmodel> students = new ArrayList<>();
-//        String FETCH_STUDENTS_SQL = "SELECT id, name, email, username FROM mdata1 WHERE role = 'STUDENT'";
-//
-//        Connection connection = getConnection();
-//        
-//        try (PreparedStatement preparedStatement = connection.prepareStatement(FETCH_STUDENTS_SQL);
-//             ResultSet rs = preparedStatement.executeQuery()) {
-//
-//            while (rs.next()) {
-//            	Adminandstdmodel student = new Adminandstdmodel();
-//                student.setId(rs.getInt("id"));
-//                student.setName(rs.getString("name"));
-//                student.setEmail(rs.getString("email"));
-//           
-//                student.setUsername(rs.getString("username"));
-//                students.add(student);
-//            }
-//        } catch (SQLException e) {
-//          e.printStackTrace();
-//        }
-//        return students;
-//    }
+	public List<Adminandstdmodel> getAllStudents() throws ClassNotFoundException, SQLException {
+    	
+    	
+    	
+        List<Adminandstdmodel> students = new ArrayList<>();
+        String FETCH_STUDENTS_SQL = "SELECT id, name, username,email,role FROM mdata1 WHERE role = 'STUDENT'";
+
+        Connection connection = getConnection();
+        
+        try (PreparedStatement preparedStatement = connection.prepareStatement(FETCH_STUDENTS_SQL);
+             ResultSet rs = preparedStatement.executeQuery()) {
+
+            while (rs.next()) {
+            	Adminandstdmodel student = new Adminandstdmodel();
+                student.setId(rs.getInt("id"));
+                student.setName(rs.getString("name"));
+                student.setEmail(rs.getString("username"));
+                student.setUsername(rs.getString("email"));
+                student.setRole(rs.getString("role"));
+                students.add(student);
+            }
+        } catch (SQLException e) {
+          e.printStackTrace();
+        }
+        return students;
+    }
 	     
 	     
 

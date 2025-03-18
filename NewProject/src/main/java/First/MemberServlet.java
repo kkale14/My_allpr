@@ -2,8 +2,10 @@ package First;
 
 
 import java.io.IOException;
+import java.sql.SQLException;
+import java.util.List;
 
-
+import First.Service;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -11,7 +13,7 @@ import jakarta.servlet.http.HttpServletResponse;
 public class MemberServlet  extends HttpServlet{
 	
 	private Dao de;
-	
+	private Service ser;
 
 	public void init() {
 		de = new Dao();
@@ -24,14 +26,21 @@ public class MemberServlet  extends HttpServlet{
 		if("register".equals(data)) {
 			register1(req,res);
 		}
-		else if("login".equals(data))
+		else if("fetch".equals(data))
 		{
+			try {
+				List<Service> students = de.getAllStudents();
+				res.sendRedirect("data.html");
+			} catch (ClassNotFoundException | SQLException e) {
+				
+				e.printStackTrace();
+			}
 			
-			res.sendRedirect("data.html");
 		 }
 		 else
 		 {
-			 
+			 res.sendRedirect("error.html");
+
 		 }
 		
 		

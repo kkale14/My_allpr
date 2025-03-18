@@ -96,9 +96,9 @@ public class Srvlt extends HttpServlet {
                 session.setAttribute("role", role);
 
                 if ("ADMIN".equals(role)) {
-//                	List<Adminandstdmodel> students = loginandregdao.getAllStudents();
-//                    request.setAttribute("students", students);
-                    request.getRequestDispatcher("welcome.html").forward(request, response);
+                	List<Adminandstdmodel> students = loginandregdao.getAllStudents();
+                    request.setAttribute("students", students);
+                    request.getRequestDispatcher("emp.jsp").forward(request, response);
                    
                 } else if("STUDENT".equals(role)) {
                     response.sendRedirect("welcome.html");
