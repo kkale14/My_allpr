@@ -17,7 +17,6 @@ INDEX VERSION 1.134+C:\Users\kkale\eclipse-workspace\.metadata\.plugins\org.ecli
 3624219738.index
 1862387653.index
 2990456815.index
-3360067200.index
 3228342586.index
 2263956719.index
 1414767474.index
@@ -41,7 +40,6 @@ INDEX VERSION 1.134+C:\Users\kkale\eclipse-workspace\.metadata\.plugins\org.ecli
 1721567520.index
 3519565022.index
 975069485.index
-611251414.index
 187477726.index
 1613483909.index
 1935514051.index
@@ -52,13 +50,10 @@ INDEX VERSION 1.134+C:\Users\kkale\eclipse-workspace\.metadata\.plugins\org.ecli
 2852261433.index
 3931669985.index
 2859655783.index
-1303080100.index
 1508827256.index
 1858039755.index
 3492665853.index
 1191286131.index
-3488328138.index
-116168125.index
 356984338.index
 445725094.index
 3153019166.index
@@ -66,8 +61,8 @@ INDEX VERSION 1.134+C:\Users\kkale\eclipse-workspace\.metadata\.plugins\org.ecli
 2540411231.index
 1665476457.index
 993877846.index
+2094726664.index
 2244791474.index
-1803574718.index
 3367711671.index
 2329359950.index
 3166674329.index
@@ -78,17 +73,14 @@ INDEX VERSION 1.134+C:\Users\kkale\eclipse-workspace\.metadata\.plugins\org.ecli
 1008988389.index
 8653174.index
 451290051.index
-2813958412.index
 2438493806.index
 156588613.index
-2054136268.index
 1536574621.index
 1492047992.index
 2935859560.index
 1865334032.index
 262949152.index
 1165776900.index
-3102582966.index
 4124910061.index
 3964109360.index
 1640506028.index

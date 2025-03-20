@@ -12,11 +12,22 @@
     
     <!-- Example of defining a service bean with constructor injection -->
     
-    
-    <bean id="bean" class="pqrs.Creditcard">
+<bean id="bean"  scope="prototype"  class="pqrs.Creditcard" >
+
+  <property name="add" ref="sos"></property>
     </bean>
     
-    <bean id="serv" class="pqrs.Debitcard">
-    </bean>
+ <bean id="serv" class="pqrs.Debitcard"></bean>
+    
+  
+<bean id="sos" class="pqrs.Address">
+  <property name="pin" value="1233"></property>
+<property name="state" value="Maharashtra"></property>
+<property name="city" value="Nashik"></property>
+</bean>
+
+
+
+
     <!-- More bean definitions as needed -->
 </beans>

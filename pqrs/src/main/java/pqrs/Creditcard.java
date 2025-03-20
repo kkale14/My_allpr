@@ -13,4 +13,34 @@ public class Creditcard implements Cardpayment {
 		
 	}
 	
+	private int a;
+
+	public int getA() {
+		return a;
+	}
+
+	public void setA(int a) {
+		this.a = a;
+	}
+	
+	
+	private Address add;
+
+	public Address getAdd() {
+		return add;
+	}
+
+	public void setAdd(Address add) {
+		this.add = add;
+	}
+
+	//	Address add=new Address();
+	
+	public void getAddress()
+	{
+		System.out.println(add.toString());
+	}
+
+	
+	
 }
