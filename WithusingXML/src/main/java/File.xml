@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+    <!-- Bean definitions go here -->
+    
+    <!-- Example of defining a simple bean-->
+    
+    <bean id="empDAO" class="first.EmployeeDAO"></bean>
+    <bean id="employeeService1" class="first.EmployeeService1">
+    <property name="employeeDAO"  ref="empDAO"></property>
+    
+    </bean> 
+    
+    
+    
+        
+    
+    <!-- Example of defining a service bean with constructor injection -->
+    
+</beans>
