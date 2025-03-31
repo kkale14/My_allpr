@@ -6,13 +6,18 @@
 
     
     
-    <bean id="new" class="process.CreditCard"></bean>
-    <bean id="sos" class="process.DebitCard"></bean>
+     <bean id="creditcard" class="process.CreditCard" primary="true" ></bean>
+     <bean id="debitcard" class="process.DebitCard"   ></bean>
     
-    <bean id="payment" class="process.PaymentProcess">
+<bean id="payment" class="process.PaymentProcess"    autowire="byType">
+    
+    
+        <!--   <constructor-arg ref="new"></constructor-arg>
+    
+ <constructor-arg ref="sos"></constructor-arg>
     <property name="creditcard" ref="new"></property>
     <property name="debitcard" ref="sos">
-    </property>
+    </property>-->
     
     </bean>
 </beans>

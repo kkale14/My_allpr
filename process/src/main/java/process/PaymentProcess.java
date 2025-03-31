@@ -1,25 +1,47 @@
 package process;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component
+
 public class PaymentProcess {
 
-	private CreditCard creditcard;
-	private DebitCard debitcard;
+	private CardPayment cardpayment;
+	private CardPayment debitcard;
+
+	
+	
+
+	PaymentProcess( ){
+	System.out.println("Hello");
 		
-		public void setCreditcard(CreditCard creditcard) {
+	}
+	@Autowired
+	PaymentProcess(@Qualifier("debitCard") CardPayment paycard ){
+		this.cardpayment=paycard;
+		
+	}
+	
+	
+		
+	/*	public void setCreditcard(CardPayment creditcard) {
 			this.creditcard = creditcard;
 		}
+		
 
 		
-		public void setDebitcard(DebitCard debitcard) {
-			this.debitcard = debitcard;
+		public void setDebitcard(CardPayment debitcard) {
+			this.cardpayment = debitcard;
 		}
-		
+		*/
 		public void process()
 		{
 			System.out.println("Starting payment process");
 
-			creditcard.process();
-			debitcard.process();
+			cardpayment.process();
+			//debitcard.process();
 			System.out.println("This is the main method");
 
 		}

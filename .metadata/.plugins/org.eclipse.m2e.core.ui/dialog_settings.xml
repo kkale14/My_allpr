@@ -19,6 +19,8 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\kkale\eclipse-workspace\UsingBean\src\main\java\First\EmpService.java"/>
+			<item value="C:\Users\kkale\eclipse-workspace\pqrs\src\main\java\pqrs\File.java"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -61,13 +63,27 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="asdf"/>
+			<item value="xyz"/>
 			<item value="abcd"/>
+			<item value="myid"/>
 			<item value="pqrs"/>
 		</list>
 		<list key="name">
+			<item value="pqrs"/>
+			<item value="por"/>
+			<item value="abc"/>
+			<item value="WithUsingXML"/>
+			<item value="Employee1"/>
+			<item value="Exam"/>
 			<item value="SimpleProject"/>
 		</list>
 		<list key="artifactId">
+			<item value="NewProjectSpring"/>
+			<item value="UsingBean"/>
+			<item value="port"/>
+			<item value="asdf"/>
+			<item value="process"/>
 			<item value="pqrs"/>
 			<item value="abcd123"/>
 		</list>

@@ -1,25 +1,19 @@
-package First;
+package process;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-
+@ComponentScan("process")
 public class ConfigFile {
 
 	
-	@Bean
-	public EmpDAO empDAO()
+	/*public  DebitCard debitcard()
 	{
-		return new EmpDAO();
+		return new DebitCard();
 		
-	}
-	
-	@Bean
-	public EmpService empService(EmpDAO empDAO)
-	{
-		return new EmpService(empDAO);
-		
-	}
+			
+	}*/
 }

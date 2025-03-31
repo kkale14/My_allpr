@@ -1,0 +1,14 @@
+package First;
+
+import java.util.List;
+
+import org.springframework.stereotype.Component;
+@Component
+public interface IEmployeeDAO {
+
+	void addEmployee(Employee employee);
+    int getEmployee(int id);
+    List<Employee> getAllEmployees();
+    void updateSalary(int id, int salary);
+    void deleteEmployee(int id);
+}

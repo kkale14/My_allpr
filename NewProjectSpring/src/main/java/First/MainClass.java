@@ -16,7 +16,15 @@ public class MainClass {
 		 
 		 EmployeeService es=(EmployeeService) ap.getBean("employeeService");
 		 
-		 es.addEmployee(null);
+		 Employee employee=new Employee();
+		 employee.setId(1);
+		 employee.setFname("Nutan");
+		 employee.setDepartment("CS");
+		 employee.setSalary(20000);
+		 
+		 es.getEmployee(1);
+		 es.getAllEmployees();
+		 es.addEmployee(employee);
 		 es.updateSalary(1, 3000);
 		 es.getEmployee(1);
 
@@ -29,21 +37,6 @@ public class MainClass {
 
 
 
-
-//employeeService.addEmployee(new Employee(1, "Kalyani", "Computer Eng", 50000));
-//employeeService.addEmployee(new Employee(2, "Nutan", "HR", 60000));
-//
-//
-//employeeService.getEmployee(1);
-//
-//List<Employee> allEmployees = employeeService.getAllEmployees();
-//
-//employeeService.updateSalary(1, 55000);
-//
-//employeeService.deleteEmployee(2);
-//
-//employeeService.getAllEmployees();
-//}
 
 
 
