@@ -23,12 +23,11 @@ public class RestControl {
 			
 		}
 		
-//		@RequestMapping(path="/valid",method=RequestMethod.POST)
-//		public String special(@ModelAttribute("user") User user, Model model)
-//		{
-//			model.addAttribute("user", user);
-//
-//			return "display";
-//			
-//		}
+		@RequestMapping("/valid")
+		public String special()
+		{
+
+			return "error";
+			
+		}
 }
