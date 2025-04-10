@@ -27,10 +27,11 @@ public class EmployeeService {
 		
 	}
 	
-	public int getEmployee(int id)
+	public Employee getEmployee(int id)
 	{
-        return employeeDAO.getEmployee(id);
+		return employeeDAO.getEmployee(id);
 		
+        
 	}
 	
 	public List<Employee> getAllEmployees()

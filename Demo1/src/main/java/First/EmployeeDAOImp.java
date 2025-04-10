@@ -9,6 +9,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.EmptyResultDataAccessException;
+import org.springframework.dao.IncorrectResultSizeDataAccessException;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
@@ -48,28 +50,36 @@ public class EmployeeDAOImp  implements IEmployeeDAO{
 }
 	
 	
-
-		
-	
-
 	@Override
-	public int getEmployee(int id)  {
-		
-//		temp.update("select * from employee1 where id=?",id);
-//		System.out.println("Employee Get Method");
-//		return id;
-		String str1="Select * from emploeyee1 where id=?";
-		MapSqlParameterSource parameter1=new MapSqlParameterSource();
-		
-		parameter1.addValue("id", id);
-		return jdbcTemplate.queryForObject(str1, parameter1, new BeanPropertyRowMapper<>(Employee.class));
+	public Employee getEmployee(int id) {
+	    // SQL query
+	    String str = "SELECT * FROM employee1 WHERE id = :id";
 
+	    // Setting up the parameters
+	    MapSqlParameterSource parameter = new MapSqlParameterSource();
+	    parameter.addValue("id", id);  // Ensure that the parameter key matches the placeholder in SQL
 
-       
+	    try {
+	        // Execute the query and map the result to the Employee object
+	        return jdbcTemplate.queryForObject(str, parameter, new BeanPropertyRowMapper<>(Employee.class));
+	    } catch (EmptyResultDataAccessException e) {
+	        // Handle case where no employee is found for the given ID
+	        System.out.println("No employee found with id: " + id);
+	        return null;  // Or you can throw a custom exception
+	    } catch (IncorrectResultSizeDataAccessException e) {
+	        // Handle case where more than one result is found (which should not happen if id is unique)
+	        System.out.println("Multiple employees found with id: " + id);
+	        return null;  // Or you can throw a custom exception
+	    }
 	}
 
+	
+	
+	
 	@Override
 	public List<Employee> getAllEmployees() {
+		return employeeList;
+		
 		
         
 	}

@@ -9,7 +9,7 @@ import javax.swing.tree.TreePath;
 public class Emprowmap  implements RowMapper {
 
 	Employee emp =new Employee();
-	@Override
+	
 	public Employee mapRow(ResultSet rs,int rowNum) throws SQLException{
 		
 		emp.setFname(rs.getString("name"));
@@ -18,6 +18,11 @@ public class Emprowmap  implements RowMapper {
 		return null;
 		
 		
+	}
+	@Override
+	public int[] getRowsForPaths(TreePath[] path) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

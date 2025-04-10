@@ -2,13 +2,16 @@ package Spring2;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
-
+//@RestController
 @Controller
+
+//if we have to pass view for all methods then give the @RequestMapping at the top of class
 public class Mainclass {
 
 	@RequestMapping("/View")
@@ -22,6 +25,8 @@ public String myname(@RequestParam("name")String str,Model model)
 	
 	}
 	
+	
+	
 	@RequestMapping("/View/{xyz}")
 	public String fun(@PathVariable("xyz")String str1)
 	{
@@ -31,6 +36,8 @@ public String myname(@RequestParam("name")String str,Model model)
 		
 	}
 		
+	
+	
 	@RequestMapping(path="/register" ,method=RequestMethod.POST)
 	public String hello(@ModelAttribute("user") User user, Model model )
 	{
@@ -39,5 +46,25 @@ public String myname(@RequestParam("name")String str,Model model)
 	}
 	
 	
+	
+	
+	@RequestMapping(path="/hello")
+	public void exc()
+	{
+		int a=0,b=10;
+		
+		int c=b/a;
+		
+	
+	}
+	
+	
+//	@ExceptionHandler(value=Exception.class)
+//	public String function()
+//	{
+//		
+//		return "error";
+//		
+//	}
 	
 }

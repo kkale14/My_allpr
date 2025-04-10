@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 public interface IEmployeeDAO {
 
 	void addEmployee(Employee employee);
-    int getEmployee(int id);
+    Employee getEmployee(int id);
     List<Employee> getAllEmployees();
     void updateSalary(int id, int salary);
     void deleteEmployee(int id);

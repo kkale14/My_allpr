@@ -7,22 +7,22 @@ public class Employee {
 	private String department;
 	private int salary;
 	
-	public Employee()
-	{
-		
-	}
-
-	public Employee(int id, String Fname, String department, int salary) {
-        this.id = id;
-        this.Fname = Fname;
-        this.department = department;
-        this.salary = salary;
-    }
-	
-	@Override
-	public String toString() {
-		return "Employee [id=" + id + ", Fname=" + Fname + ", department=" + department + ", salary=" + salary + "]";
-	}
+//	public Employee()
+//	{
+//		
+//	}
+//
+//	public Employee(int id, String Fname, String department, int salary) {
+//        this.id = id;
+//        this.Fname = Fname;
+//        this.department = department;
+//        this.salary = salary;
+//    }
+//	
+//	@Override
+//	public String toString() {
+//		return "Employee [id=" + id + ", Fname=" + Fname + ", department=" + department + ", salary=" + salary + "]";
+//	}
 	
 	public int getId() {
 		return id;
